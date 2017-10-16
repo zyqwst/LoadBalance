@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>LoadBalance Demo</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class="container">
+	<div class="row">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				Session信息 <span class="label label-warning" th:text="|端口：${port}|"></span>
+			</div>
+			<div class="panel-body">
+				<p>当前用户: <span class="" th:text="${session.curuser}"></span></p>
+				<p>SessionID: <span class="label label-default" th:text="${session.sessionid}"></span></p>
+				<a class="btn btn-primary" href="/logout">登出</a>
+			</div>
+		</div>
+	</div>
+
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

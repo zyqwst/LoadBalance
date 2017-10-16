@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>LoadBalance Demo</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class="container">
+	<div class="row">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				登录 <span class="label label-warning" th:text="|端口：${port}|"></span>
+			</div>
+			<div class="panel-body">
+				<form action="/login" class="form-inline" method="post">
+					<div class="form-group">
+						<label for="username">用户名：</label>
+						<input type="input" class="form-control" name="username" id="username"/>
+						<button type="submit" class="btn btn-primary">登录</button>
+					</div>
+				</form>
+				
+			</div>
+			
+		</div>
+	</div>
+
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
