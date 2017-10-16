@@ -41,3 +41,11 @@
    ```
 
 4. 效果预览
++ 访问localhost:80,可以看到分配到了9001端口
+![访问localhost:80](https://github.com/zyqwst/LoadBalance/blob/master/screenshot/login.png)
+
++ 登录进去后重定向到9002端口
+![登录进去后重定向到9002端口](https://github.com/zyqwst/LoadBalance/blob/master/screenshot/success.png)
+
++ 刷新页面端口是9001
+![刷新页面发现端口是9001](https://github.com/zyqwst/LoadBalance/blob/master/screenshot/refresh.png)
